@@ -14,15 +14,13 @@ function mergeSort(array)
 
         if(firstHalf[0] < secondHalf[0])
         {
-            array[0] = (firstHalf[0]);
-            array[1] = (secondHalf[0]);
+            array = firstHalf.concat(secondHalf);
 
             return array;
         }
-        else if(secondHalf[0] <= firstHalf[0])
+        else
         {
-            array[0] =(secondHalf[0]);
-            array[1] = (firstHalf[0]);
+            array = secondHalf.concat(firstHalf);
 
             return array;
         }
